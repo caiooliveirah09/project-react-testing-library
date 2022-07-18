@@ -1,0 +1,560 @@
+15:40:45 (21796) INFO ConfigReader Using stryker.conf.json
+15:40:45 (21796) INFO BroadcastReporter Detected that current console does not support the "progress" reporter, downgrading to "progress-append-only" reporter
+15:40:45 (21796) DEBUG ConfigReader Loading config C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\stryker.conf.json
+15:40:45 (21796) DEBUG BroadcastReporter Broadcasting to reporters ["progress-append-only","clear-text","html"]
+15:40:45 (21796) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/pages/About.js",
+    "src/App.js",
+    "src/pages/FavoritePokemons.js",
+    "src/pages/NotFound.js",
+    "src/pages/Pokedex.js",
+    "src/components/FavoriteInput.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonButtonsPanel.js",
+    "src/components/PokemonData.js",
+    "src/pages/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\stryker.conf.json"
+}
+15:40:45 (21796) DEBUG PluginLoader Loading @stryker-mutator/* from C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator
+15:40:45 (21796) DEBUG PluginLoader Loading plugin "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator" (matched with expression @stryker-mutator/*)
+15:40:45 (21796) DEBUG PluginLoader Loading plugin "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner" (matched with expression @stryker-mutator/*)
+15:40:45 (21796) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator
+15:40:45 (21796) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner
+15:40:45 (21796) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\reporters\index.js
+15:40:45 (21796) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+15:40:45 (21796) INFO InputFileResolver Found 10 of 70 file(s) to be mutated.
+15:40:45 (21796) DEBUG InputFileResolver All input files: [
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\tests\\renderWithRouter.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\stryker.log",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.babelrc.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.eslintignore",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.eslintrc.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.github\\CODEOWNERS",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.github\\workflows\\main.yml",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.gitignore",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.npmrc",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.stylelintignore",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.stylelintrc.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.trybe\\requirements.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\README.md",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\package-lock.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\package.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\public\\favicon.ico",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\public\\index.html",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\public\\logo192.png",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\public\\logo512.png",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\public\\manifest.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\public\\robots.txt",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\public\\star-icon.svg",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\App.css",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\App.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\Button.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\FavoriteInput.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\Pokemon.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\PokemonButtonsPanel.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\PokemonData.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\button.css",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\index.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\pokemon.css",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\data.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\index.css",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\index.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\logo.svg",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\About.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\FavoritePokemons.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\NotFound.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\Pokedex.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\PokemonDetails.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\about.css",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\favorite-pokemons.css",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\index.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\not-found.css",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\pokedex.css",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\pokemon-details.css",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\routes\\index.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\serviceWorker.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\services\\pokedexService.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\setupTests.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\tests\\About.test.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\tests\\App.test.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\tests\\FavoritePokemons.test.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\tests\\NotFound.test.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\tests\\Pokedex.test.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\tests\\Pokemon.test.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\tests\\PokemonDetails.test.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\types\\index.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\stryker.conf.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\stryker\\About.conf.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\stryker\\App.conf.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\stryker\\FavoritePokemons.conf.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\stryker\\NotFound.conf.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\stryker\\Pokedex.conf.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\stryker\\Pokemon.conf.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\stryker\\PokemonDetails.conf.json",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\testefalhando.png",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\testepassando.png",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\trybe.yml"
+]
+15:40:45 (21796) DEBUG InputFileResolver Files to mutate: [
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\App.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\FavoriteInput.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\Pokemon.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\PokemonButtonsPanel.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\components\\PokemonData.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\About.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\FavoritePokemons.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\NotFound.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\Pokedex.js",
+  "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\src\\pages\\PokemonDetails.js"
+]
+15:40:45 (21796) DEBUG TemporaryDirectory Using temp directory "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp"
+15:40:45 (21796) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+15:40:45 (21796) INFO InitialTestExecutor Starting initial test run. This may take a while.
+15:40:45 (21796) DEBUG Sandbox Creating a sandbox for files in C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+15:40:45 (21796) DEBUG Sandbox Creating test runner 0
+15:40:45 (21796) DEBUG ChildProcessProxy Starting C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\test-runner\ChildProcessTestRunnerWorker.js in child process 22916
+15:40:46 (22916) DEBUG ChildProcessProxyWorker Changing current working directory for this process to C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+15:40:46 (22916) DEBUG PluginLoader Loading @stryker-mutator/* from C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator
+15:40:46 (22916) DEBUG PluginLoader Loading plugin "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator" (matched with expression @stryker-mutator/*)
+15:40:46 (22916) DEBUG PluginLoader Loading plugin "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner" (matched with expression @stryker-mutator/*)
+15:40:46 (22916) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator
+15:40:46 (22916) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner
+15:40:46 (22916) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\reporters\index.js
+15:40:46 (22916) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js",
+    "^.+\\.css$": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.stryker-tmp\\sandbox2215871"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:40:46 (22916) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:40:46 (22916) DEBUG JestTestRunner Project root is C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+15:40:46 (21796) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+15:40:46 (22916) TRACE JestGreaterThan25Adapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jsdom","transform":{"^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js","^.+\\.css$":"C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js","^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"resetMocks":true,"rootDir":"C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.stryker-tmp\\sandbox2215871","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:40:47 (21796) TRACE ChildProcessProxy No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+  28 files checked.
+  testMatch: C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/__tests__/**/*.{js,jsx,ts,tsx}, C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 28 matches
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+15:40:47 (21796) ERROR log4js A worker log process hung up unexpectedly Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+15:40:47 (21796) WARN ChildProcessProxy Child process [pid 22916] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+	  28 files checked.
+	  testMatch: C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/__tests__/**/*.{js,jsx,ts,tsx}, C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 28 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	 ChildProcessCrashedError: Child process [pid 22916] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+	  28 files checked.
+	  testMatch: C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/__tests__/**/*.{js,jsx,ts,tsx}, C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 28 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	
+    at ChildProcessProxy.handleUnexpectedExit (C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\child-proxy\ChildProcessProxy.js:33:37)
+    at ChildProcess.emit (node:events:527:28)
+    at maybeClose (node:internal/child_process:1092:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5) {
+  innerError: undefined,
+  pid: 22916,
+  exitCode: 1,
+  signal: null
+}
+15:40:47 (21796) DEBUG ChildProcessProxy Starting C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\test-runner\ChildProcessTestRunnerWorker.js in child process 21060
+15:40:47 (21796) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+15:40:47 (21060) DEBUG ChildProcessProxyWorker Changing current working directory for this process to C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+15:40:47 (21060) DEBUG PluginLoader Loading @stryker-mutator/* from C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator
+15:40:47 (21060) DEBUG PluginLoader Loading plugin "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator" (matched with expression @stryker-mutator/*)
+15:40:47 (21060) DEBUG PluginLoader Loading plugin "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner" (matched with expression @stryker-mutator/*)
+15:40:47 (21060) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator
+15:40:47 (21060) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner
+15:40:47 (21060) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\reporters\index.js
+15:40:47 (21060) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js",
+    "^.+\\.css$": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.stryker-tmp\\sandbox2215871"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:40:47 (21060) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:40:47 (21060) DEBUG JestTestRunner Project root is C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+15:40:47 (21060) TRACE JestGreaterThan25Adapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jsdom","transform":{"^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js","^.+\\.css$":"C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js","^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"resetMocks":true,"rootDir":"C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.stryker-tmp\\sandbox2215871","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+15:40:48 (21796) TRACE ChildProcessProxy No tests found, exiting with code 1
+Run with `--passWithNoTests` to exit with code 0
+In C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+  28 files checked.
+  testMatch: C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/__tests__/**/*.{js,jsx,ts,tsx}, C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+  testPathIgnorePatterns: \\node_modules\\ - 28 matches
+  testRegex:  - 0 matches
+Pattern:  - 0 matches
+
+15:40:48 (21796) ERROR log4js A worker log process hung up unexpectedly Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+15:40:48 (21796) WARN ChildProcessProxy Child process [pid 21060] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+	  28 files checked.
+	  testMatch: C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/__tests__/**/*.{js,jsx,ts,tsx}, C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 28 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	 ChildProcessCrashedError: Child process [pid 21060] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+	  28 files checked.
+	  testMatch: C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/__tests__/**/*.{js,jsx,ts,tsx}, C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 28 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	
+    at ChildProcessProxy.handleUnexpectedExit (C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\child-proxy\ChildProcessProxy.js:33:37)
+    at ChildProcess.emit (node:events:527:28)
+    at maybeClose (node:internal/child_process:1092:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5) {
+  innerError: undefined,
+  pid: 21060,
+  exitCode: 1,
+  signal: null
+}
+15:40:48 (21796) DEBUG ChildProcessProxy Starting C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\test-runner\ChildProcessTestRunnerWorker.js in child process 20900
+15:40:48 (20900) DEBUG ChildProcessProxyWorker Changing current working directory for this process to C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+15:40:48 (20900) DEBUG PluginLoader Loading @stryker-mutator/* from C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator
+15:40:48 (20900) DEBUG PluginLoader Loading plugin "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator" (matched with expression @stryker-mutator/*)
+15:40:48 (20900) DEBUG PluginLoader Loading plugin "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner" (matched with expression @stryker-mutator/*)
+15:40:48 (20900) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator
+15:40:48 (20900) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner
+15:40:48 (20900) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\reporters\index.js
+15:40:48 (20900) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js",
+    "^.+\\.css$": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.stryker-tmp\\sandbox2215871"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:40:48 (20900) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:40:48 (20900) DEBUG JestTestRunner Project root is C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+15:40:48 (21796) DEBUG ChildProcessProxy Disposing of worker process 20900
+15:40:48 (21796) DEBUG ChildProcessProxy Kill 20900
+15:40:49 (21796) DEBUG ChildProcessProxy Starting C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\test-runner\ChildProcessTestRunnerWorker.js in child process 19696
+15:40:49 (19696) DEBUG ChildProcessProxyWorker Changing current working directory for this process to C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+15:40:49 (19696) DEBUG PluginLoader Loading @stryker-mutator/* from C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator
+15:40:49 (19696) DEBUG PluginLoader Loading plugin "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator" (matched with expression @stryker-mutator/*)
+15:40:49 (19696) DEBUG PluginLoader Loading plugin "C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner" (matched with expression @stryker-mutator/*)
+15:40:49 (19696) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\javascript-mutator
+15:40:49 (19696) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\jest-runner
+15:40:49 (19696) DEBUG PluginLoader Loading plugins C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\reporters\index.js
+15:40:49 (19696) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-app-polyfill\\jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\babelTransform.js",
+    "^.+\\.css$": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\node_modules\\react-scripts\\config\\jest\\fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "C:\\Users\\leelr\\OneDrive\\Documentos\\elros\\sd-022-b-project-react-testing-library\\.stryker-tmp\\sandbox2215871"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+15:40:49 (19696) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+15:40:49 (19696) DEBUG JestTestRunner Project root is C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+15:40:49 (21796) DEBUG ChildProcessProxy Disposing of worker process 19696
+15:40:49 (21796) DEBUG ChildProcessProxy Kill 19696
+15:40:49 (21796) ERROR InitialTestExecutor One or more tests resulted in an error:
+	Test runner crashed. Tried twice to restart it without any luck. Last time the error message was: Error: Child process [pid 21060] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+	  28 files checked.
+	  testMatch: C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/__tests__/**/*.{js,jsx,ts,tsx}, C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 28 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	
+Error: Child process [pid 21060] exited unexpectedly with exit code 1 (without signal). Last part of stdout and stderr was:
+	No tests found, exiting with code 1
+	Run with `--passWithNoTests` to exit with code 0
+	In C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\.stryker-tmp\sandbox2215871
+	  28 files checked.
+	  testMatch: C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/__tests__/**/*.{js,jsx,ts,tsx}, C:/Users/leelr/OneDrive/Documentos/elros/sd-022-b-project-react-testing-library\.stryker-tmp/sandbox2215871/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
+	  testPathIgnorePatterns: \\node_modules\\ - 28 matches
+	  testRegex:  - 0 matches
+	Pattern:  - 0 matches
+	
+    at ChildProcessProxy.handleUnexpectedExit (C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\child-proxy\ChildProcessProxy.js:33:37)
+    at ChildProcess.emit (node:events:527:28)
+    at maybeClose (node:internal/child_process:1092:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)
+15:40:49 (21796) ERROR StrykerCli an error occurred Error: Something went wrong in the initial test run
+    at InitialTestExecutor.validateResult (C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\process\InitialTestExecutor.js:86:15)
+    at InitialTestExecutor.run (C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\process\InitialTestExecutor.js:41:14)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Stryker.runMutationTest (C:\Users\leelr\OneDrive\Documentos\elros\sd-022-b-project-react-testing-library\node_modules\@stryker-mutator\core\src\Stryker.js:53:38)
